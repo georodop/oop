@@ -1,9 +1,11 @@
 /*
-Ασκ. 3.4
+2ο-(3ο) Εργαστήριο, Ασκ. 3.4
 Έστω ότι το πρόγραμμα σας χρησιμοποιεί μια μεταβλητή με όνομα time τύπου int. Ορίστε την και
 εκτυπώστε την τιμή της. Επίσης έστω ότι το πρόγραμμα σας θέλει να εκτυπώνει την τρέχουσα
 χρονική στιγμή (θυμηθείτε την συνάρτηση time). Τροποποιήστε το πρόγραμμα σας καταλλήλως.
 */
+//Remember that you cannot declare a namespace inside a function
+//and you cannot do "using namespace" and then undo this...
 
 #include <iostream>
 #include <ctime>
@@ -33,8 +35,6 @@ namespace realtime {
 namespace spectime {
 	int time = 10; //Just testing if I can use the name
 }
-//Remember that you cannot declare a namespace inside a function
-//and you cannot do "using namespace" and then undo this...
 
 int main(){
 	realtime::time = time(NULL);
