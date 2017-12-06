@@ -22,8 +22,9 @@ main()
 
   char* string1 = "abagaadagaga";
 
+  cout << "Original string is " << string1 << endl;
   cout << remove(string1, 'a') <<endl;
-  cout << remove(string1, 'g') <<endl;
+  //cout << remove(string1, 'g') <<endl;
 
 }
 
@@ -32,7 +33,7 @@ char* remove(const char* str, char ch)
 
   int l = length(str);
 
-  char res[l+1];
+  char res[l+1]; //create a table of l+1 characters
 
   for( int i =0, j = 0; i <= l; i++ )
 
